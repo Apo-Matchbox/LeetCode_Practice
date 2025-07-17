@@ -1,4 +1,4 @@
-# LeetCode_Arai60
+# LeetCode_Practice
 
 ## 目次
 - [1. 概要](#1-概要)
