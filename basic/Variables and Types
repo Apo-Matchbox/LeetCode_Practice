@@ -1,0 +1,26 @@
+```cpp
+/*In the next exercise, you will need to create a program which prints out the sum of the numbers a, b, and c.*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 3;
+    float b = 4.5;
+    double c = 5.25;
+    double sum;
+
+    /* Your code goes here */
+    sum = a + b + c;
+
+    cout << "The sum of a, b, and c is " << sum << endl;
+    return 0;
+}
+
+```
+
+Exercise自体は特に問題なし。
+説明文内での不明事項は、後ほど要確認
+  - typedefs
+  - enum
+  - 
