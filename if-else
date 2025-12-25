@@ -1,0 +1,44 @@
+```cpp
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double item1, item2, taxRate;
+    double basePrice, totalPrice, priceAfterDiscount;
+    string clubCardMember;
+
+    cout << "Enter price of first item: " << endl;
+    cin >> item1;
+    cout << "Enter price of second item: " << endl;
+    cin >> item2;
+    cout << "Do you have a club card? Please enter 'Y' or 'y' for Yes, 'N' or 'n' for No: " << endl;
+    cin >> clubCardMember;
+    cout << "Enter tax rate, e.g. 5.5 for 5.5% tax: " << endl;
+    cin >> taxRate;
+
+    basePrice = item1 + item2;
+    double promPrice = (item1 < item2) ? item2 + item1 * 0.5 : item1 + item2 * 0.5;
+
+    if(clubCardMember == "Y" || clubCardMember == "y") {
+        priceAfterDiscount = promPrice * 0.9;
+    }
+    else
+        priceAfterDiscount = promPrice;
+
+    double convertedTaxRate = 1 + (taxRate / 100);
+    totalPrice =priceAfterDiscount * convertedTaxRate;
+
+    cout << "Enter price of first item: " << item1 << endl;
+    cout << "Enter price of second item: " << item2 << endl;
+    cout << "Does customer have a club card? (Y/N): " << clubCardMember << endl;
+    cout << "Enter tax rate, e.g. 5.5 for 5.5% tax: " << taxRate << endl;
+    cout << fixed << "Base price: " << setprecision(1) << basePrice << endl;
+    cout << "Price after discount: " << priceAfterDiscount << endl;
+    cout << "Total price: " << totalPrice << endl;
+
+    return 0;
+}
+
+```
