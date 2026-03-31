@@ -1,0 +1,46 @@
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string name, status;
+    int gradYear, currYear;
+
+    cout << "Please enter your name: " << endl;
+    cin >> name;
+    cout << "Please enter your graduation year: " << endl;
+    cin >> gradYear;
+    cout << "Please enter current year: " << endl;
+    cin >> currYear;
+
+    int diffYear = gradYear - currYear;
+
+    if(diffYear == 0) {
+        status = "Graduated";
+    }
+    else if(diffYear == 4) {
+        status = "Freshman";
+    }
+    else if(diffYear == 3) {
+        status = "Sophomore";
+    }
+    else if(diffYear == 2) {
+        status = "Junior";
+    }
+    else if(diffYear == 1) {
+        status = "Senior";
+    }
+    else {
+        status = "Not in college yet.";
+    }
+
+    cout << "Please enter your name: " << name << endl;
+    cout << "Please enter your graduation year: " << gradYear << endl;
+    cout << "Please enter your current year: " << currYear << endl;
+    cout << name << ", you are a " << status << endl;
+
+    return 0;
+}
+
+```
